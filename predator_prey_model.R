@@ -45,4 +45,5 @@ ggplot(pop.df, aes(x = time)) +
        x = "Time", y = "Population Size") +
   scale_color_manual(name = "Legend", 
                      values = c("blue", "red")) +
-  theme_minimal()
+  theme_bw()
+ggsave("figures/PredatorPreyModel.png")
